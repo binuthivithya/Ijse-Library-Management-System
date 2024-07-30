@@ -23,7 +23,7 @@ public class ServiceFactory {
             case MEMBER:
                 return new MemberServiceImpl();
             case BORROWING:
-              //  return new BorrowingServiceImpl();
+                return new BorrowingServiceImpl();
             case RETURN:
                // return new ReturnServiceImpl();
             default:

@@ -25,7 +25,7 @@ public class DaoFactory {
             case MEMBER:
                 return new MemberDaoImpl();
             case BORROWING:
-                //return new BorrowingDaoImpl();
+                return new BorrowingDaoImpl();
             case RETURN:
                 //return new ReturnDaoImpl();
             default:
