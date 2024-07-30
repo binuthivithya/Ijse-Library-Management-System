@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="context" prefHeight="469.0" prefWidth="988.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.ijse.UIController.BookFormController">
+   <children>
+      <Label contentDisplay="CENTER" layoutX="25.0" layoutY="14.0" text="BOOK" textFill="#35a8ed">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="25.0" layoutY="79.0" text="Book ID">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="228.0" layoutY="79.0" prefHeight="20.0" prefWidth="45.0" text="Title">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="25.0" layoutY="126.0" text="Author">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtBookID" disable="true" layoutX="97.0" layoutY="76.0" prefHeight="26.0" prefWidth="104.0" />
+      <TextField fx:id="txtTitle" layoutX="275.0" layoutY="76.0" prefHeight="26.0" prefWidth="243.0" />
+      <TextField fx:id="txtAuthor" layoutX="98.0" layoutY="123.0" prefHeight="26.0" prefWidth="273.0" />
+      <TableView fx:id="tblBook" layoutX="7.0" layoutY="222.0" prefHeight="233.0" prefWidth="972.0">
+         <columns>
+            <TableColumn fx:id="colBookID" prefWidth="81.0" text="ID" />
+            <TableColumn fx:id="colTitle" prefWidth="156.0" text="Title" />
+            <TableColumn fx:id="colAuthor" prefWidth="181.0" text="Author" />
+            <TableColumn fx:id="colISBN" prefWidth="116.0" text="ISBN" />
+            <TableColumn fx:id="colQoh" prefWidth="90.0" text="QOH" />
+            <TableColumn fx:id="colUnitPrice" prefWidth="108.0" text="Unit Price(Rs.)" />
+            <TableColumn fx:id="colCategory" prefWidth="149.0" text="Category" />
+            <TableColumn fx:id="colOption" prefWidth="90.0" text="Option" />
+         </columns>
+      </TableView>
+      <Button fx:id="btnSaveBook" layoutX="786.0" layoutY="173.0" mnemonicParsing="false" onAction="#saveBookOnAction" prefHeight="27.0" prefWidth="171.0" style="-fx-background-color: #35A8ED;" text="Save Book" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Separator layoutX="25.0" layoutY="42.0" prefHeight="14.0" prefWidth="951.0" />
+      <Button layoutX="821.0" layoutY="15.0" mnemonicParsing="false" onAction="#backToDashOnAction" prefHeight="29.0" prefWidth="146.0" style="-fx-background-color: #0C214E;" text="Back to Dashboard" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="548.0" layoutY="79.0" prefHeight="20.0" prefWidth="45.0" text="Qoh">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtQoh" layoutX="590.0" layoutY="76.0" prefHeight="26.0" prefWidth="72.0" />
+      <Label layoutX="397.0" layoutY="126.0" prefHeight="20.0" prefWidth="45.0" text="ISBN">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtISBN" layoutX="454.0" layoutY="123.0" prefHeight="26.0" prefWidth="207.0" promptText="000-00-000000-0-0" />
+      <Button layoutX="676.0" layoutY="15.0" mnemonicParsing="false" onAction="#newBookOnAction" prefHeight="27.0" prefWidth="135.0" style="-fx-background-color: #35A8ED;" text="+New Book" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <ComboBox fx:id="cmbBookCategory" layoutX="786.0" layoutY="76.0" prefHeight="26.0" prefWidth="171.0" promptText="Select Book Category" />
+      <Label layoutX="701.0" layoutY="79.0" prefHeight="20.0" prefWidth="72.0" text="Category">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="701.0" layoutY="126.0" prefHeight="20.0" prefWidth="85.0" text="Unit Price">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtUnitPrice" layoutX="786.0" layoutY="123.0" prefHeight="26.0" prefWidth="171.0" promptText="Rs." />
+   </children>
+</AnchorPane>

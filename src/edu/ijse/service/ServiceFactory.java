@@ -19,7 +19,7 @@ public class ServiceFactory {
             case CATEGORY:
                 return new CategoryServiceImpl();
             case BOOK:
-               // return new BookServiceImpl();
+                return new BookServiceImpl();
             case MEMBER:
                // return new MemberServiceImpl();
             case BORROWING:
