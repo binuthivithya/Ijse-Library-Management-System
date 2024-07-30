@@ -21,7 +21,7 @@ public class DaoFactory {
             case CATEGORY:
                 return new CategoryDaoImpl();
             case BOOK:
-                //return new BookDaoImpl();
+                return new BookDaoImpl();
             case MEMBER:
                // return new MemberDaoImpl();
             case BORROWING:
