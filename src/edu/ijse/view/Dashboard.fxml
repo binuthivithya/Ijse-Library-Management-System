@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="context" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.ijse.UIController.DashboardController">
+    <children>
+        <Label layoutX="24.0" layoutY="17.0" text="Dashboard" textFill="#35a8ed">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Label>
+        <Label fx:id="lblDate" layoutX="327.0" layoutY="20.0" text="2024-01-01" textFill="#0c214e">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Label>
+        <Label fx:id="lblTime" layoutX="418.0" layoutY="20.0" text="05.20.25" textFill="#0c214e">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Label>
+        <Button layoutX="486.0" layoutY="15.0" mnemonicParsing="false" onAction="#logoutOnAction" prefHeight="23.0" prefWidth="95.0" style="-fx-background-color: #0C214E;" text="Logout" textFill="WHITE">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Button>
+        <Separator layoutX="24.0" layoutY="47.0" prefHeight="11.0" prefWidth="557.0" />
+        <Button layoutX="65.0" layoutY="91.0" mnemonicParsing="false" onAction="#categoryOnAction" prefHeight="82.0" prefWidth="144.0" style="-fx-background-color: #35A8ED;" text="Category" textFill="WHITE">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Button>
+        <Button layoutX="234.0" layoutY="91.0" mnemonicParsing="false" onAction="#bookOnAction" prefHeight="82.0" prefWidth="130.0" style="-fx-background-color: #45B84F;" text="Book" textFill="WHITE">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Button>
+        <Button layoutX="391.0" layoutY="91.0" mnemonicParsing="false" onAction="#memberOnAction" prefHeight="82.0" prefWidth="130.0" style="-fx-background-color: #FE5E1C;" text="Member" textFill="WHITE">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Button>
+        <Button layoutX="66.0" layoutY="193.0" mnemonicParsing="false" onAction="#borrowingsOnAction" prefHeight="82.0" prefWidth="208.0" style="-fx-background-color: #0C214E;" text="Borrowings" textFill="WHITE">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Button>
+        <Button layoutX="299.0" layoutY="193.0" mnemonicParsing="false" onAction="#returnOnAction" prefHeight="82.0" prefWidth="224.0" style="-fx-background-color: #35A8ED;" text="Returns and Fine" textFill="WHITE">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Button>
+        <Label layoutX="521.0" layoutY="379.0" prefHeight="17.0" prefWidth="85.0" text="Version :1.0.0" textFill="#0c214e">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Label>
+        <Label layoutX="17.0" layoutY="379.0" text="From : Binu" textFill="#0c214e">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

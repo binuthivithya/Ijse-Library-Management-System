@@ -19,7 +19,7 @@ public class DaoFactory {
             case USER:
                 return new UserDaoImpl();
             case CATEGORY:
-                //return new CategoryDaoImpl();
+                return new CategoryDaoImpl();
             case BOOK:
                 //return new BookDaoImpl();
             case MEMBER:

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="context" prefHeight="471.0" prefWidth="699.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.ijse.UIController.CategoryFormController">
+   <children>
+      <Label layoutX="13.0" layoutY="26.0" text="Book Categories" textFill="#35a8ed">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="80.0" layoutY="93.0" text="Category ID">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="335.0" layoutY="93.0" text="Name">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="82.0" layoutY="138.0" text="Description">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtCatID" disable="true" layoutX="199.0" layoutY="90.0" prefHeight="26.0" prefWidth="104.0" />
+      <TextField fx:id="txtCatName" layoutX="393.0" layoutY="90.0" prefHeight="26.0" prefWidth="224.0" />
+      <TextField fx:id="txtCatDesc" layoutX="199.0" layoutY="135.0" prefHeight="26.0" prefWidth="418.0" />
+      <TableView fx:id="tblCategories" layoutX="31.0" layoutY="229.0" prefHeight="233.0" prefWidth="639.0">
+        <columns>
+          <TableColumn fx:id="colCatID" prefWidth="103.99999618530273" text="ID" />
+          <TableColumn fx:id="colCatName" prefWidth="199.3333282470703" text="Name" />
+            <TableColumn fx:id="colCatDesc" prefWidth="332.6665954589844" text="Description" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnSaveCat" layoutX="282.0" layoutY="179.0" mnemonicParsing="false" onAction="#saveCatOnAction" prefHeight="27.0" prefWidth="147.0" style="-fx-background-color: #35A8ED;" text="Save Category" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Separator layoutX="8.0" layoutY="56.0" prefHeight="14.0" prefWidth="680.0" />
+      <Button layoutX="534.0" layoutY="20.0" mnemonicParsing="false" onAction="#backToDashOnAction" prefHeight="29.0" prefWidth="147.0" style="-fx-background-color: #0C214E;" text="Back to Dashboard" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="380.0" layoutY="20.0" mnemonicParsing="false" onAction="#newCatOnAction" prefHeight="27.0" prefWidth="147.0" style="-fx-background-color: #35A8ED;" text="+New Category" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>
