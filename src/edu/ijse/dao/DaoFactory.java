@@ -23,7 +23,7 @@ public class DaoFactory {
             case BOOK:
                 return new BookDaoImpl();
             case MEMBER:
-               // return new MemberDaoImpl();
+                return new MemberDaoImpl();
             case BORROWING:
                 //return new BorrowingDaoImpl();
             case RETURN:

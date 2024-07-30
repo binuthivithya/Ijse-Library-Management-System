@@ -21,7 +21,7 @@ public class ServiceFactory {
             case BOOK:
                 return new BookServiceImpl();
             case MEMBER:
-               // return new MemberServiceImpl();
+                return new MemberServiceImpl();
             case BORROWING:
               //  return new BorrowingServiceImpl();
             case RETURN:
