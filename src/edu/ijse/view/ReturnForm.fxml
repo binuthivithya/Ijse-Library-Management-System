@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<AnchorPane fx:id="context" prefHeight="612.0" prefWidth="1008.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.ijse.UIController.ReturnFormController">
+   <children>
+      <Label contentDisplay="CENTER" layoutX="14.0" layoutY="14.0" text="Return Book" textFill="#35a8ed">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button layoutX="670.0" layoutY="15.0" mnemonicParsing="false" onAction="#newBookReturnOnAction" prefHeight="29.0" prefWidth="153.0" style="-fx-background-color: #35A8ED;" text="+New Book Return" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="833.0" layoutY="15.0" mnemonicParsing="false" onAction="#backToDashOnAction" prefHeight="29.0" prefWidth="153.0" style="-fx-background-color: #0C214E;" text="Back to Dashboard" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Separator layoutX="14.0" layoutY="42.0" prefHeight="14.0" prefWidth="972.0" />
+      <TableView fx:id="tblReturn" layoutX="14.0" layoutY="335.0" prefHeight="263.0" prefWidth="972.0">
+         <columns>
+            <TableColumn fx:id="colReturnID" prefWidth="92.0" text="ID" />
+            <TableColumn fx:id="colBorrowID" prefWidth="132.0" text="Borrow ID" />
+            <TableColumn fx:id="colMemberID" prefWidth="142.0" text="Member ID " />
+            <TableColumn fx:id="colMemberName" prefWidth="212.0" text="Member Name" />
+            <TableColumn fx:id="colBookID" prefWidth="116.0" text="Book Id" />
+            <TableColumn fx:id="colBookTitle" prefWidth="176.0" text="Book Title" />
+            <TableColumn fx:id="colDueDate" prefWidth="105.0" text="Due Date" />
+            <TableColumn fx:id="colFine" prefWidth="105.0" text=" Fine (Rs.)" />
+            <TableColumn fx:id="colIsFinePaid" prefWidth="105.0" text="Is Fine Paid?" />
+         </columns>
+      </TableView>
+      <TextField fx:id="txtSearch" alignment="CENTER" layoutX="115.0" layoutY="82.0" prefHeight="26.0" prefWidth="746.0" promptText="Search for Borrow ID or Member ID or Book ID">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </TextField>
+      <TableView fx:id="tblBorrowDetails" layoutX="115.0" layoutY="135.0" prefHeight="171.0" prefWidth="746.0">
+        <columns>
+          <TableColumn fx:id="colBorrowDetailsID" prefWidth="75.0" text="Borrow ID" />
+          <TableColumn fx:id="colBorrowMemberID" prefWidth="75.0" text="Member ID" />
+            <TableColumn fx:id="colBorrowMemberName" prefWidth="189.0" text="Member Name" />
+            <TableColumn fx:id="colBorrowBookID" prefWidth="109.0" text="Book ID" />
+            <TableColumn fx:id="colBorrowBookName" prefWidth="190.0" text="Book Name" />
+            <TableColumn fx:id="colBurrowedDate" prefWidth="107.0" text="Burrowed Date" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

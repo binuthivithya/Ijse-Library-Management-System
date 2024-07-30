@@ -25,7 +25,7 @@ public class ServiceFactory {
             case BORROWING:
                 return new BorrowingServiceImpl();
             case RETURN:
-               // return new ReturnServiceImpl();
+                return new ReturnServiceImpl();
             default:
                 return null;
         }
