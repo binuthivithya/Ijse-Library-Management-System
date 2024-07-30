@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+<AnchorPane fx:id="context" prefHeight="375.0" prefWidth="848.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.ijse.UIController.ReturnDetailsFormController">
+   <children>
+      <Label contentDisplay="CENTER" layoutX="14.0" layoutY="14.0" text="Return Book Details" textFill="#35a8ed">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Separator layoutX="13.0" layoutY="53.0" prefHeight="14.0" prefWidth="811.0" />
+      <Button fx:id="btnReturn" layoutX="617.0" layoutY="318.0" mnemonicParsing="false" onAction="#returnOnAction" prefHeight="27.0" prefWidth="171.0" style="-fx-background-color: #35A8ED;" text="Confirm RETURN" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <TextField fx:id="txtBorrowID" disable="true" layoutX="170.0" layoutY="124.0" />
+      <Label layoutX="45.0" layoutY="127.0" text="Borrow ID">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="45.0" layoutY="228.0" text="Member Name">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtMemberName" disable="true" layoutX="170.0" layoutY="221.0" />
+      <Label layoutX="44.0" layoutY="278.0" text="Book ID">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtBookID" disable="true" layoutX="170.0" layoutY="275.0" />
+      <TextField fx:id="txtBookTitle" disable="true" layoutX="170.0" layoutY="327.0" prefHeight="26.0" prefWidth="252.0" />
+      <Label layoutX="44.0" layoutY="330.0" text="Book Title">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtBorrowDate" disable="true" layoutX="623.0" layoutY="78.0" />
+      <Label layoutX="497.0" layoutY="81.0" text="Borrow Date">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="497.0" layoutY="127.0" text="Due Date">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtDueDate" disable="true" layoutX="623.0" layoutY="124.0" />
+      <Label layoutX="497.0" layoutY="174.0" text="Returned Date">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtReturnDate" disable="true" layoutX="623.0" layoutY="171.0" />
+      <TextField fx:id="txtFine" disable="true" layoutX="623.0" layoutY="227.0" />
+      <Label layoutX="497.0" layoutY="230.0" text="Fine ">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <CheckBox fx:id="txtFinePaid" layoutX="623.0" layoutY="259.0" mnemonicParsing="false" text="Paid">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </CheckBox>
+      <Label layoutX="47.0" layoutY="81.0" prefHeight="20.0" prefWidth="75.0" text="Return ID">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtReturnID" disable="true" layoutX="170.0" layoutY="78.0" prefHeight="26.0" prefWidth="104.0" />
+      <TextField fx:id="txtMemberID" disable="true" layoutX="170.0" layoutY="171.0" />
+      <Label layoutX="45.0" layoutY="174.0" text="Member ID">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
