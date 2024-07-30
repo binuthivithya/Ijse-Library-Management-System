@@ -17,7 +17,7 @@ public class ServiceFactory {
             case USER:
                 return new UserServiceImpl();
             case CATEGORY:
-               // return new CategoryServiceImpl();
+                return new CategoryServiceImpl();
             case BOOK:
                // return new BookServiceImpl();
             case MEMBER:
