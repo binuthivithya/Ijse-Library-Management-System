@@ -63,12 +63,12 @@
             <Font name="System Bold" size="14.0" />
          </font>
       </Button>
-      <Label layoutX="312.0" layoutY="126.0" prefHeight="20.0" prefWidth="45.0" text="e-mail">
+      <Label layoutX="312.0" layoutY="126.0" prefHeight="25.0" prefWidth="59.0" text="e-mail">
          <font>
             <Font name="System Bold" size="16.0" />
          </font>
       </Label>
-      <TextField fx:id="txtEmail" layoutX="381.0" layoutY="123.0" prefHeight="26.0" prefWidth="243.0" />
+      <TextField fx:id="txtEmail" layoutX="397.0" layoutY="123.0" prefHeight="26.0" prefWidth="243.0" />
       <Button layoutX="693.0" layoutY="15.0" mnemonicParsing="false" onAction="#newBookOnAction" prefHeight="27.0" prefWidth="135.0" style="-fx-background-color: #35A8ED;" text="+New Member" textFill="WHITE">
          <font>
             <Font name="System Bold" size="14.0" />
